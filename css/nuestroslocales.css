@@ -1,0 +1,79 @@
+/* Contenedor principal de la sección */
+.contenedor-locales {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+  color: #111; /* texto oscuro para contraste con fondo amarillo */
+}
+
+/* Título principal */
+.titulo-seccion {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #111;
+}
+
+/* Secciones internas */
+.info-local, .direccion-local, .razon-local, .mapa {
+  background-color: rgb(222, 166, 42); /* fondo amarillo */
+  padding: 25px 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  color: #111; /* texto oscuro para buena legibilidad */
+}
+
+/* Subtítulos internos */
+.info-local h3, .direccion-local h3, .razon-local h3, .mapa h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Párrafos */
+.info-local p, .direccion-local p, .razon-local p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Estilo para el iframe del mapa */
+.mapa iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 15px;
+  border: 0;
+  display: block;
+  margin: 15px auto 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .titulo-seccion {
+    font-size: 2rem;
+  }
+
+  .info-local, .direccion-local, .razon-local, .mapa {
+    padding: 20px 15px;
+  }
+
+  .mapa iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-seccion {
+    font-size: 1.7rem;
+  }
+
+  .info-local p, .direccion-local p, .razon-local p {
+    font-size: 0.95rem;
+  }
+}
